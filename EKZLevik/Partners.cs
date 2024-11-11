@@ -14,7 +14,7 @@ namespace EKZLevik
 {
     public partial class Partners : Form
     {
-        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Student\\Desktop\\students.mdb";
+        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=students.accdb";
 
         private OleDbConnection connection;
         public Partners()

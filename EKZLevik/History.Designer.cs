@@ -39,6 +39,7 @@
             historyDV.Name = "historyDV";
             historyDV.Size = new Size(797, 437);
             historyDV.TabIndex = 0;
+            historyDV.CellContentClick += historyDV_CellContentClick;
             // 
             // History
             // 

@@ -13,7 +13,7 @@ namespace EKZLevik
 {
     public partial class History : Form
     {
-        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Student\\Desktop\\students.mdb";
+        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=students.accdb";
         OleDbConnection connection;
         string name;
         public History(string name)
@@ -29,7 +29,7 @@ namespace EKZLevik
             OleDbDataReader reader = sqlCommand.ExecuteReader();
 
 
-            using(DataTable history = new DataTable())
+            using (DataTable history = new DataTable())
             {
                 history.Columns.Add("Продукция", typeof(string));
                 history.Columns.Add("Количество продукции", typeof(int));
@@ -41,10 +41,10 @@ namespace EKZLevik
 
                 historyDV.DataSource = history;
             }
-            
 
-            
-            
+
+
+
         }
 
         private void History_Load(object sender, EventArgs e)
@@ -56,6 +56,11 @@ namespace EKZLevik
             //{
 
             //}
+
+        }
+
+        private void historyDV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

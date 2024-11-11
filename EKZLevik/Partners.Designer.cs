@@ -36,7 +36,7 @@
             partnersPanel.FlowDirection = FlowDirection.TopDown;
             partnersPanel.Location = new Point(6, 3);
             partnersPanel.Name = "partnersPanel";
-            partnersPanel.Size = new Size(425, 426);
+            partnersPanel.Size = new Size(776, 426);
             partnersPanel.TabIndex = 0;
             // 
             // Partners
